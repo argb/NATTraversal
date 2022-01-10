@@ -9,7 +9,7 @@ import (
 
 func main() {
 	udpAddr := &net.UDPAddr{
-		IP: net.IPv4zero, // 0地址，https://blog.csdn.net/liyi1009365545/article/details/84780476
+		IP: net.IPv4zero, // 0地址，相当于监听所有本地ip地址。 https://blog.csdn.net/liyi1009365545/article/details/84780476
 		Port: 9527,
 	}
 	listener, err := net.ListenUDP("udp", udpAddr)
